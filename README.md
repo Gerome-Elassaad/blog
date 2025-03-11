@@ -21,7 +21,7 @@ Ensure you have the following installed:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/blog.git
+   git clone https://github.com/Gerome-Elassaad/blog.git
    cd blog
    ```
 
@@ -32,22 +32,14 @@ Ensure you have the following installed:
    yarn install
    ```
 
-3. Set up environment variables:
-   Create a `.env` file and configure the following:
-   ```env
-   NEXT_PUBLIC_API_URL=http://localhost:5000/api
-   NEXTAUTH_SECRET=your-secret-key
-   DATABASE_URL=your-database-connection-string
-   ```
-
-4. Run the development server:
+3. Run the development server:
    ```sh
    npm run dev  
    # or
    yarn dev
    ```
 
-5. Open your browser and navigate to:
+4. Open your browser and navigate to:
    ```
    http://localhost:3000
    ```
