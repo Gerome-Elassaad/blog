@@ -1,68 +1,81 @@
-# Astro Starter Kit: Blog
+# DeepRankAI Blog Site Template
 
-```sh
-npm create astro@latest -- --template blog
-```
+Welcome to the **Blog Site** repository! This is a modern blogging platform built with **(Astro)**, **TypeScript**, and **React Integration**. It features dynamic blog posts, user authentication, and a rich content editing experience.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
+## Features
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- 📝 **Dynamic Blog Posts** - Fetch and display blog posts dynamically.
+- ⚡ **Fast & SEO-Friendly** - Optimized for performance and search engines.
+- 🔄 **React Query Integration** - Efficient data fetching and caching.
+- 🚀 **API-Based Architecture** - Fetch content from a REST API.
 
-![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
+## Getting Started
 
-Features:
+### Prerequisites
+Ensure you have the following installed:
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+- [Node.js](https://nodejs.org/) (v16 or later recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-## 🚀 Project Structure
+### Installation
 
-Inside of your Astro project, you'll see the following folders and files:
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/blog.git
+   cd blog
+   ```
 
-```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
+2. Install dependencies:
+   ```sh
+   npm install  
+   # or
+   yarn install
+   ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+3. Set up environment variables:
+   Create a `.env` file and configure the following:
+   ```env
+   NEXT_PUBLIC_API_URL=http://localhost:5000/api
+   NEXTAUTH_SECRET=your-secret-key
+   DATABASE_URL=your-database-connection-string
+   ```
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+4. Run the development server:
+   ```sh
+   npm run dev  
+   # or
+   yarn dev
+   ```
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+5. Open your browser and navigate to:
+   ```
+   http://localhost:3000
+   ```
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Deployment
 
-## 🧞 Commands
+To deploy the blog site, use platforms like **Vercel**, **Netlify**, or **DigitalOcean**.
 
-All commands are run from the root of the project, from a terminal:
+### Deploy to Vercel
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+1. Install the Vercel CLI:
+   ```sh
+   npm install -g vercel
+   ```
+2. Run the deployment command:
+   ```sh
+   vercel
+   ```
 
-## 👀 Want to learn more?
+## Contributing
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Contributions are welcome! Feel free to open an issue or submit a pull request.
 
-## Credit
+## License
 
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+This project is licensed under the **MIT License**.
+
+---
+
+Made with ❤️ by Gerome-Elassaad
+
